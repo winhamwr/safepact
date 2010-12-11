@@ -1,3 +1,4 @@
 .virtualenv
 .vagrant
 safepact/dev.db
+*.pyc
