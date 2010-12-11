@@ -45,10 +45,10 @@ h1 {
 }
 #footer {
     color: #999; /* footer text colour */
-    margin: 50px auto;
-    padding: 10px;
+    margin: 0 auto 50px;
+    padding: 10px 0;
     clear: both;
-    width: 800px;
+    width: 820px;
 }
 #footer a, #footer a:visited {
     color: #444; /* footer link colour */
