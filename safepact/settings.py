@@ -151,7 +151,7 @@ INSTALLED_APPS = [
     "pinax.apps.signup_codes",
 
     # project
-    "about",
+    "dashboard",
 ]
 
 FIXTURE_DIRS = [
