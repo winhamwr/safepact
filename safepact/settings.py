@@ -97,7 +97,9 @@ MIDDLEWARE_CLASSES = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django_openid.consumer.SessionConsumer",
     "django.contrib.messages.middleware.MessageMiddleware",
+    "pinax.apps.account.middleware.LocaleMiddleware",
     "pinax.middleware.security.HideSensistiveFieldsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
@@ -116,10 +118,12 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.core.context_processors.media",
     "django.core.context_processors.request",
     "django.contrib.messages.context_processors.messages",
-    
+
     "staticfiles.context_processors.static_url",
-    
+
     "pinax.core.context_processors.pinax_settings",
+
+    "pinax.apps.account.context_processors.account",
 ]
 
 INSTALLED_APPS = [
@@ -131,16 +135,25 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.humanize",
-    
+
     "pinax.templatetags",
-    
+
     # external
     "staticfiles",
     "debug_toolbar",
-    
+    "mailer",
+    "uni_form",
+    "django_openid",
+    "ajax_validation",
+    "timezones",
+    "emailconfirmation",
+
     # Pinax
-    
+    "pinax.apps.account",
+    "pinax.apps.signup_codes",
+
     # project
+    "about",
 ]
 
 FIXTURE_DIRS = [
@@ -148,6 +161,22 @@ FIXTURE_DIRS = [
 ]
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
+
+ACCOUNT_OPEN_SIGNUP = True
+ACCOUNT_REQUIRED_EMAIL = False
+ACCOUNT_EMAIL_VERIFICATION = False
+ACCOUNT_EMAIL_AUTHENTICATION = False
+ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
+
+AUTHENTICATION_BACKENDS = [
+    "pinax.apps.account.auth_backends.AuthenticationBackend",
+]
+
+LOGIN_URL = "/account/login/" # @@@ any way this can be a url name?
+LOGIN_REDIRECT_URLNAME = "what_next"
+
+EMAIL_CONFIRMATION_DAYS = 2
+EMAIL_DEBUG = DEBUG
 
 DEBUG_TOOLBAR_CONFIG = {
     "INTERCEPT_REDIRECTS": False,
