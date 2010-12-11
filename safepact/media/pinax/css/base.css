@@ -19,17 +19,6 @@ img {
 dt {
     font-weight: bold;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 0;
-    font-size: inherit;
-}
-td {
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
 h1 {
     margin: 0;
 }
@@ -270,4 +259,38 @@ div.right_panel {
     width: 200px;
     float: right;
     z-index: 999;
+}
+
+/* tables */
+table.jobstable {
+	width: 100%;
+	border-left: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+table thead tr th, table.jobstable tfoot tr th {
+	font-size: 11px;
+	padding: 0 0 0 5px;
+	text-align: left;
+	border-bottom: 1px solid #dedede;
+	border-right: 1px solid #b5b5b5;
+	border-top: 1px solid #efefef;
+	background-image: url('../img/td-header-bg.gif');
+	color: #484848;
+}
+table.jobstable thead tr th:hover{
+	background-image: url('../img/td-header-bg-hover.gif');
+}
+table.jobstable thead tr .header {
+	cursor: pointer;
+}
+table.jobstable tbody td {
+	color: #3D3D3D;
+	font-size: 11px;
+	padding: 2px 0 2px 5px;
+	background-color: #FFF;
+	vertical-align: top;
+	border-right: 1px solid #efefef;
+}
+table.jobstable tbody tr.odd td {
+	background-color:#f5f5f5;
 }
