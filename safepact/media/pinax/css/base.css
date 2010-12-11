@@ -4,7 +4,7 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: #FFF;
+    background-color: #d4d4d4;
     margin: 0;
     color: #333;
     font-family: "Helvetica Neue", Arial, sans-serif;
@@ -41,6 +41,7 @@ h1 {
     margin: 0 auto;
     padding: 10px;
     width: 800px;
+    background-color: #fff;
 }
 #footer {
     color: #999; /* footer text colour */
@@ -88,11 +89,13 @@ h1 {
 /* HEADER */
 
 #tabhead {
-    background: #035 url('../img/heading.png') left top repeat-x;
-    border-bottom: 1px solid #000; /* tab border */
-    position: relative;
+	clear:both;
+	margin: 0 auto;
+    padding: 10px;
+    width: 800px;
 }
 #tabhead .logo {
+	float: left;
     height: 80px;
     padding-left: 5px;
     padding-top: 0;
@@ -102,16 +105,14 @@ h1 {
     height: 79px;
 }
 #tabhead .login {
-    position: absolute;
-    top: 6px;
-    right: 15px;
-    color: #DEF; /* login bar text colour */
+	float:right;
+    color: #333333; /* login bar text colour */
 }
 #tabhead .login a, #tabhead .login a:visited {
-    color: #DEF; /* login bar link colour */
+    color: #333333; /* login bar link colour */
 }
 #tabhead .login a:hover {
-    color: #FFF; /* login bar link hover colour */
+    color: #333333; /* login bar link hover colour */
 }
 
 #locale_switcher {
@@ -119,10 +120,11 @@ h1 {
 }
 
 #subnav {
-    margin: 0;
-    padding: 0;
-    background: #DEF; /* tab colour */
-    border-bottom: 1px solid #9BC;
+	clear:both;
+	margin: 0 auto;
+	background: #ededed;
+    padding: 0 10px;
+    width: 800px;
 }
 #subnav ul {
     float: right;
