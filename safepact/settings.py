@@ -142,6 +142,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "mailer",
     "uni_form",
+    "django_openid",
     "ajax_validation",
     "timezones",
     "emailconfirmation",
