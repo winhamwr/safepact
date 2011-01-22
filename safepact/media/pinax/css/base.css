@@ -4,7 +4,6 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: #d4d4d4;
     margin: 0;
     color: #333;
     font-family: "Helvetica Neue", Arial, sans-serif;
@@ -27,17 +26,25 @@ h1 {
 
 #body {
     clear: both;
-    margin: 0 auto;
+    margin: 20px auto 0;
+    width: 598px;
     padding: 10px;
-    width: 800px;
     background-color: #fff;
+	-webkit-border-radius: 6px 6px 0px 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+	border-radius: 6px 6px 0px 0px;
+	-webkit-box-shadow:0px 3px 6px -5px #000000;
+	-moz-box-shadow:0px 3px 6px -5px #000000;
+	box-shadow:0px 3px 6px -5px #000000;
+	height: auto;
+	border: 1px solid #fff;
 }
 #footer {
+	clear: both;
     color: #999; /* footer text colour */
-    margin: 0 auto 50px;
-    padding: 10px 0;
-    clear: both;
-    width: 820px;
+    margin: 20px auto 50px;
+    text-align: center;
+    width: 620px;
 }
 #footer a, #footer a:visited {
     color: #444; /* footer link colour */
@@ -45,6 +52,8 @@ h1 {
 #footer a:hover {
     color: #777; /* footer link hover colour */
 }
+
+.legal {font-size: 10px;}
 
 
 /* CLEARS */
@@ -79,19 +88,18 @@ h1 {
 
 #tabhead {
 	clear:both;
-	margin: 0 auto;
-    padding: 10px;
-    width: 800px;
-    height: 30px;
+	margin: 36px auto 0;
+    width: 620px;
+    height: 54px;
+    background: url('../img/nav-bg-login.gif');
 }
 #tabhead .logo {
 	float: left;
-    padding-left: 5px;
-    padding-top: 0;
 }
 #tabhead .logo img {
-    width: 190px;
-    height: 79px;
+    width: 167px;
+    height: 52px;
+    margin:0 0 0 10px;
 }
 #tabhead .login {
 	float:right;
@@ -114,6 +122,7 @@ h1 {
 	background: #ededed;
     padding: 0 10px;
     width: 800px;
+    display: none;
 }
 #subnav ul {
     float: right;

@@ -3,14 +3,12 @@
 {% load i18n %}
 
 {% block extra_head_base %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/site_tabs.css" />
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/color.css" />
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css" />
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/typography.css" />
+    <!-- <link rel="stylesheet" href="{{ STATIC_URL }}css/site_tabs.css" /> -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" />
     {% block extra_head %}{% endblock %}
 {% endblock %}
 
-{% block logo_link_image %}<a href="{% url home %}">SafePact</a>{% endblock %}
+{% block logo_link_image %}<a href="{% url home %}"><img src="{{ STATIC_URL }}images/logo.png" /></a>{% endblock %}
 
 {% block login %}
     {% include "_account_bar.html" %}
@@ -18,6 +16,6 @@
 
 {% block footer %}
 <div class="legal">
-    {% trans "SafePact &copy; 2010" %}
+    {% trans "&copy; 2010-2011 SafePact" %}
 </div>
 {% endblock %}
