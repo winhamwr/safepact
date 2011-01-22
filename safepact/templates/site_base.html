@@ -3,8 +3,7 @@
 {% load i18n %}
 
 {% block extra_head_base %}
-    <!-- <link rel="stylesheet" href="{{ STATIC_URL }}css/site_tabs.css" /> -->
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/site_tabs.css" />
     {% block extra_head %}{% endblock %}
 {% endblock %}
 
@@ -16,6 +15,6 @@
 
 {% block footer %}
 <div class="legal">
-    {% trans "&copy; 2010-2011 SafePact" %}
+    {% trans "&copy; 2010-2011 SafePact" %}&nbsp;&nbsp;{% if user.is_authenticated %}{% if user.is_staff %}<a href="/admin/">Admin</a>{% endif %}{% endif %}
 </div>
 {% endblock %}

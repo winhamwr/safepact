@@ -6,8 +6,9 @@ html, body {
 body {
     margin: 0;
     color: #333;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", sans-serif;
     font-size: 10pt;
+    background: url('../img/background.gif');
 }
 a, a:visited {
     color: #13C;
@@ -22,13 +23,13 @@ h1 {
     margin: 0;
 }
 
-
+#hint_id_remember {display:none;}
 
 #body {
     clear: both;
     margin: 20px auto 0;
-    width: 598px;
-    padding: 10px;
+    width: 588px;
+    padding: 15px;
     background-color: #fff;
 	-webkit-border-radius: 6px 6px 0px 0px;
 	-moz-border-radius: 6px 6px 0px 0px;
@@ -103,13 +104,25 @@ h1 {
 }
 #tabhead .login {
 	float:right;
-    color: #333333; /* login bar text colour */
+    color: #ffffff; /* login bar text colour */
+	display: block;
+	line-height: 52px;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+#tabhead .login p {
+	margin:0;
+	padding: 0 10px;
+	float:left;
 }
 #tabhead .login a, #tabhead .login a:visited {
-    color: #333333; /* login bar link colour */
+    color: #ffffff; /* login bar link colour */
+    text-decoration: none;
+    padding: 0 10px;
 }
 #tabhead .login a:hover {
-    color: #333333; /* login bar link hover colour */
+    color: #ffffff; /* login bar link hover colour */
+    text-decoration: underline;
 }
 
 #locale_switcher {
@@ -121,8 +134,8 @@ h1 {
 	margin: 0 auto;
 	background: #ededed;
     padding: 0 10px;
-    width: 800px;
-    display: none;
+    width: 600px;
+    display:none;
 }
 #subnav ul {
     float: right;
