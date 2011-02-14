@@ -29,18 +29,17 @@ To set up a development environment::
 
  * Grab the git submodules ::
 
+    $ cd safepact
     $ git submodule init
     $ git submodule update
 
  * Delete the broken tomcat6 cookbook ::
 
-    $ rm -r ~/workspace/safepact/config/site-cookbooks/opscode/tomcat6
+    $ rm -r config/site-cookbooks/opscode/tomcat6
 
  * UBUNTU ONLY. Ensure that NFS is installed ::
 
-    $ sudo apt-get install nfs-common
-    $ sudo apt-get install nfs-kernel-server
-
+    $ sudo apt-get install nfs-common nfs-kernel-server
 
 .. _`Vagrant`: http://vagrantup.com
 
