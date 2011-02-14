@@ -27,9 +27,20 @@ To set up a development environment::
     $ gem install vagrant
     $ vagrant box add base http://files.vagrantup.com/lucid32.box
 
+ * Grab the git submodules ::
+
+    $ git submodule init
+    $ git submodule update
+
  * Delete the broken tomcat6 cookbook ::
 
     $ rm -r ~/workspace/safepact/config/site-cookbooks/opscode/tomcat6
+
+ * UBUNTU ONLY. Ensure that NFS is installed ::
+
+    $ sudo apt-get install nfs-common
+    $ sudo apt-get install nfs-kernel-server
+
 
 .. _`Vagrant`: http://vagrantup.com
 
