@@ -153,6 +153,7 @@ INSTALLED_APPS = [
 
     # project
     "dashboard",
+    "mockups",
 ]
 
 FIXTURE_DIRS = [

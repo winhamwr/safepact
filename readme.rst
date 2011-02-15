@@ -25,7 +25,7 @@ To set up a development environment::
  * Install `Vagrant`_ ::
 
     $ gem install vagrant
-    $ vagrant box add base http://files.vagrantup.com/lucid32.box
+    $ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
 
  * Grab the git submodules ::
 

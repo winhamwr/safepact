@@ -1,0 +1,7 @@
+.enclosing { width:auto; border: 1px solid black; }
+.left_box {width:49%; height: 220px; float: left; border: 1px solid black;}
+.right_box {width:49%; float: right; }
+.right_box p {text-align: center; }
+p.strong {font-weight: bold; }
+.right_box span {border: 1px dotted black; padding: 10px; margin: 20px; font-weight: bold}
+.clear {clear:both;}

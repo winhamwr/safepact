@@ -21,6 +21,7 @@ urlpatterns = patterns("",
     url(r"^admin/", include(admin.site.urls)),
     url(r"^account/", include("pinax.apps.account.urls")),
     url(r"^dashboard/", include("dashboard.urls")),
+    url(r"^mockups/", include("mockups.urls")),
 )
 
 
