@@ -11,11 +11,18 @@
 
 {% block body %}
 <div class="enclosing">
-    <div class="left_box">
-    left
+    <div class="left_box_form">
+    <div class="form-title">Contractor Account Sign Up:</div>
+    <form action="/mockups/contractor/signup" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+    </form>
+    Already have an account?
+    Log In! Sign Up!
     </div>
     <div class="right_box">
-    right
+    Contractor Accounts
+    
     </div>
     <div class="clear"></div>
 </div>

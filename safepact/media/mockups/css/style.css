@@ -1,3 +1,4 @@
+/* front page*/
 .enclosing { width:auto; border: 1px solid black; }
 .left_box {width:49%; height: 220px; float: left; border: 1px solid black;}
 .right_box {width:49%; float: right; }
@@ -5,3 +6,10 @@
 p.strong {font-weight: bold; }
 .right_box span {border: 1px dotted black; padding: 10px; margin: 20px; font-weight: bold}
 .clear {clear:both;}
+
+/* forms */
+.left_box_form {width:65%; height: 480px; float: left; border: 1px solid black;}
+.left_box_form p {text-align:right;}
+.left_box_form select {width: 190px;}
+.right_box_form {width:39%; float: right; }
+.form-title {padding: 5px; margin: 10px 5px;}
