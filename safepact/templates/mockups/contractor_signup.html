@@ -1,0 +1,22 @@
+{% extends "site_base.html" %}
+
+{% block head_title %}Helping You Make Secure Transactions{% endblock %}
+
+{% block extra_head_base %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}mockups/css/style.css" />
+    {% block extra_head %}{% endblock %}
+{% endblock %}
+
+{% load i18n %}
+
+{% block body %}
+<div class="enclosing">
+    <div class="left_box">
+    left
+    </div>
+    <div class="right_box">
+    right
+    </div>
+    <div class="clear"></div>
+</div>
+{% endblock %}

@@ -7,4 +7,12 @@ def index(request):
     return render_to_response("mockups/index.html", context,
                               context_instance=RequestContext(request))
                               
-
+def contractor_signup(request):
+    context = {}
+    return render_to_response("mockups/contractor_signup.html", context,
+                              context_instance=RequestContext(request))
+                              
+def homeowner_signup(request):
+    context = {}
+    return render_to_response("mockups/homeowner_signup.html", context,
+                              context_instance=RequestContext(request))
