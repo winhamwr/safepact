@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response
 from django.conf import settings
 from django.template import RequestContext
-from forms import ContractorSignupForm
+from forms import ContractorSignupForm, HomeownerSignupForm
 
 def index(request):
     context = {}
@@ -15,6 +15,7 @@ def contractor_signup(request):
                               context_instance=RequestContext(request))
                               
 def homeowner_signup(request):
-    context = {}
+    form = HomeownerSignupForm()
+    context = {'form' : form}
     return render_to_response("mockups/homeowner_signup.html", context,
                               context_instance=RequestContext(request))
