@@ -12,17 +12,16 @@
 {% block body %}
 <div class="enclosing">
     <div class="left_box_form">
-    <div class="form-title">Contractor Account Sign Up:</div>
-    <form action="/mockups/contractor/signup" method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit" />
-    </form>
-    Already have an account?
-    Log In! Sign Up!
-    </div>
-    <div class="right_box">
-    Contractor Accounts
-    
+        <div class="form-title">Contractor Account Sign Up:</div>
+        <form action="/mockups/contractor/signup" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        </form>
+        <div class="login-top">Already have an account?</div>
+        <span>Log In!</span><span>Sign Up!</span>
+        </div>
+    <div class="right_box_form">
+    <p>Contractor Accounts</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget risus eu risus adipiscing eleifend. Donec lacinia erat a orci elementum tempor. Nulla suscipit diam et massa ornare vestibulum. Phasellus eget ante ut tellus ullamcorper mollis. Etiam eu massa nulla. Donec dignissim commodo elementum. Maecenas sit amet urna elit, blandit egestas augue. Quisque a ante a dolor rhoncus tempor. Quisque facilisis vestibulum augue eu congue. Quisque nisl dolor, pulvinar elementum sagittis vel, malesuada ac est.</p>
     </div>
     <div class="clear"></div>
 </div>

@@ -1,6 +1,6 @@
 /* front page*/
-.enclosing { width:auto; border: 1px solid black; }
-.left_box {width:49%; height: 220px; float: left; border: 1px solid black;}
+.enclosing { width:auto; }
+.left_box {width:49%; height: 220px; float: left; }
 .right_box {width:49%; float: right; }
 .right_box p {text-align: center; }
 p.strong {font-weight: bold; }
@@ -13,3 +13,8 @@ p.strong {font-weight: bold; }
 .left_box_form select {width: 190px;}
 .right_box_form {width:39%; float: right; }
 .form-title {padding: 5px; margin: 10px 5px;}
+
+/* Contractor Sign up */
+.left_box_form span {border: 1px dotted black; padding: 10px; margin: 20px; font-weight: bold}
+.login-top {font-size: 8px; margin: 10px 0 20px 10px; padding: 0px; border: none;}
+.right_box_form {width:30%; float: right; margin-top: 50px; border: 1px solid black; padding: 2px; text-align: center;}
